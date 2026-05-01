@@ -1,4 +1,4 @@
-import type { SavedStats } from '../../src/types/stats';
+import type { SavedStats } from '../../src/types/stats.js';
 
 const FORBIDDEN_KEYS = new Set([
   'messages',
