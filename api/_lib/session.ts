@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createHmac, timingSafeEqual } from 'node:crypto';
-import { isProduction, requiredEnv } from './env';
+import { isProduction, requiredEnv } from './env.js';
 
 export type SessionAccess = 'view' | 'editor';
 

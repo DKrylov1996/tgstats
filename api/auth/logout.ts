@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { methodNotAllowed } from '../_lib/http';
-import { clearSessionCookie } from '../_lib/session';
+import { methodNotAllowed } from '../_lib/http.js';
+import { clearSessionCookie } from '../_lib/session.js';
 
 export default function handler(req: VercelRequest, res: VercelResponse): void {
   if (req.method !== 'POST') {

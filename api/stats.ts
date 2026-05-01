@@ -1,9 +1,9 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import type { SavedStats } from '../src/types/stats';
-import { json, methodNotAllowed, readObjectBody, serverError, unauthorized } from './_lib/http';
-import { getSupabase } from './_lib/supabase';
-import { assertSavedStats } from './_lib/statsValidation';
-import { hasStatsReadAccess, readSessionAccess } from './_lib/session';
+import type { SavedStats } from '../src/types/stats.js';
+import { json, methodNotAllowed, readObjectBody, serverError, unauthorized } from './_lib/http.js';
+import { getSupabase } from './_lib/supabase.js';
+import { assertSavedStats } from './_lib/statsValidation.js';
+import { hasStatsReadAccess, readSessionAccess } from './_lib/session.js';
 
 const SINGLETON_ID = 'main';
 const TABLE_NAME = 'telegram_stats';

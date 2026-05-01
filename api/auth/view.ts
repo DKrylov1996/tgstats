@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { methodNotAllowed, readPassword, serverError, unauthorized } from '../_lib/http';
-import { readPasswordConfig } from '../_lib/env';
-import { safeCompare, setSessionCookie } from '../_lib/session';
+import { methodNotAllowed, readPassword, serverError, unauthorized } from '../_lib/http.js';
+import { readPasswordConfig } from '../_lib/env.js';
+import { safeCompare, setSessionCookie } from '../_lib/session.js';
 
 export default function handler(req: VercelRequest, res: VercelResponse): void {
   if (req.method !== 'POST') {
